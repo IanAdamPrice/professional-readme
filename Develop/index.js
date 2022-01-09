@@ -2,6 +2,15 @@
 const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
 //const questions = [];
+inquirer
+  .prompt([
+    {
+      type: 'input',
+      name: 'name',
+      message: 'What is your name?'
+    }
+  ])
+  .then(answers => console.log(answers));
 
 // TODO: Create a function to write README file
 //function writeToFile(fileName, data) {}
@@ -12,4 +21,3 @@ const inquirer = require('inquirer');
 // Function call to initialize app
 //init();
 
-console.log('Hello!');
