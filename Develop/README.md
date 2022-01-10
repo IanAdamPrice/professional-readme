@@ -1,22 +1,23 @@
-# README Generator
+# f
 
   ## Licensing:
-  [![license](https://img.shields.io/badge/license-MIT-blue)](https://shields.io)
+  # ![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)
 
   ## Description:
-  Generate flksahdlkfhdkljhfljksdkfhkjlhkjflshdjkfhdskjfhdskajhfajkhklf
+  f
 
   ## Installation:
-  ksadjkhfkjhdkjhfsklajdljfhlfhlf
+  f
 
   ## Usage:
-  asjkdhfjkahsdjkhfkjlahlkhfkjhfjhs
+  f
 
   ## License:
-  MIT
+  * This project is licensed under the License 
+ [Boost Software License 1.0](https://choosealicense.com/licenses/bsl-1.0/) 
 
   ## Contribution:
-  sdjahfsdhfkjhfkjlhsfkljhalkjhl
+  f
 
   ## Testing:
-  hfkjhsadkjfhkjhfjklhjfkhkjh 
+  f 
