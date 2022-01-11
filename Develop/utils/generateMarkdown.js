@@ -33,13 +33,10 @@ function renderLicenseSection(license) {
   switch (license) {
     case 'MIT':
       return 'License \n [MIT](https://choosealicense.com/licenses/mit/)';
-
     case 'Apache 2.0':
       return 'License \n [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)';
-
     case 'Boost Software License 1.0':
       return 'License \n [Boost Software License 1.0](https://choosealicense.com/licenses/bsl-1.0/)';
-
     case 'GNU AGPL v3':
       return 'License \n [GNU AGPL v3](https://choosealicense.com/licenses/agpl-3.0/)'
     default:
@@ -53,6 +50,15 @@ function generateMarkdown(data) {
 
   ## Licensing:
   # ${renderLicenseBadge(data.license[0])}
+
+  ## Table of Contents 
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contribution](#contribution)
+  - [Testing](#testing)
+  - [Questions](#question)
 
   ## Description:
   ${data.description}
@@ -70,7 +76,11 @@ function generateMarkdown(data) {
   ${data.contribution}
 
   ## Testing:
-  ${data.testing} `;
+  ${data.testing} 
+  
+  ## Questions:
+  * If you have any questions about the rep, open an issue or contact me directly at <${data.email}></a>
+  * You can find more of my work on Github [${data.Username}](http://github.com/${data.Username})`;
 }
 
 module.exports = generateMarkdown;

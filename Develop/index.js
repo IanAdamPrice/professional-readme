@@ -5,6 +5,34 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [{
+    type: 'input',
+    name: 'Username',
+    message: 'What is your GitHub Username? (Required)',
+    //validate to make sure there is a value there
+    validate: UsernameInput => {
+      if (UsernameInput) {
+        return true;
+      } else {
+        console.log('Please enter your GitHub username.');
+        return false;
+      }
+    }
+  },
+  {  
+  type: 'input',
+  name: 'email',
+  message: 'What is your email address? (Required)',
+  //validate to make sure there is a value there
+  validate: emailInput => {
+    if (emailInput) {
+      return true;
+    } else {
+      console.log('Please enter your email address.');
+      return false;
+    }
+  }
+},
+  {
   type: 'input',
   name: 'title',
   message: 'What is the title of your project? (Required)',
@@ -122,9 +150,9 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions)
-    .then(function (userInput) {
-      console.log(userInput)
-      writeToFile("README.md", generateMarkdown(userInput));
+    .then(function (data) {
+      //console.log(userInput)
+      writeToFile("README1.md", generateMarkdown(data));
     });
 };
 
